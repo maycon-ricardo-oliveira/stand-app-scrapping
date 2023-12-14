@@ -1,0 +1,320 @@
+[
+  {
+    "title": "Afonso Padilha Stand-up Comedy",
+    "season": "até 21 de Dezembro",
+    "schedule": "Quintas, às 21h",
+    "placeLink": "https://www.sampaingressos.com.br/local/Comedy%20Sampa%20Club__2555",
+    "price": "R$ 59,90",
+    "duration": "80 minutos.",
+    "classification": {
+      "label": "16 anos*",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Domingos de Morais, 348 - Vila Mariana",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_115187.jpg?12511",
+    "placeTitle": "Comedy Sampa Club",
+    "placeSeats": 0,
+    "comedianName": "Afonso Padilha",
+    "seasonDate": {
+      "fim": "2023-12-21T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Em Pé na Rede",
+    "season": "até 19 de Dezembro",
+    "schedule": "terças, às 20h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Clube%20Barbixas%20de%20Com%C3%A9dia__2925",
+    "price": "R$ 20,00",
+    "duration": "90 minutos",
+    "classification": {
+      "label": "14 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/14anos.svg"
+    },
+    "address": "R. Augusta, 1129 - Consolação",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_124785.jpg?12511",
+    "placeTitle": "Clube Barbixas de Comédia",
+    "placeSeats": 280,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2023-12-19T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Fábio Rabin - Teatro Bradesco",
+    "season": "Dia 17 de Dezembro (domingo)",
+    "schedule": "Domingo, às 20h.",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20Bradesco__213",
+    "price": "A partir de R$ 40,00",
+    "duration": null,
+    "classification": {
+      "label": "16 anos*",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Palestra Itália, nº 500 - 3º Piso do Shopping Bourbon - Perdizes",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_129301.jpg?12511",
+    "placeTitle": "Teatro Bradesco",
+    "placeSeats": 1457,
+    "comedianName": "Fábio Rabin",
+    "seasonDate": {
+      "data": "2023-12-17T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "O Maravilhoso Mundo de Nando Viana",
+    "season": "até 28 de Dezembro",
+    "schedule": "Quintas, às 21h (exceto 21/12)",
+    "placeLink": "https://www.sampaingressos.com.br/local/Clube%20Barbixas%20de%20Com%C3%A9dia__2925",
+    "price": "R$ 40,00",
+    "duration": "70 minutos",
+    "classification": {
+      "label": "18 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/18anos.svg"
+    },
+    "address": "R. Augusta, 1129 - Consolação",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_129468.jpg?12511",
+    "placeTitle": "Clube Barbixas de Comédia",
+    "placeSeats": 280,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2023-12-28T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Confraria Comedy - Humor e Música",
+    "season": "Sessão única hoje (terça)",
+    "schedule": "terça, às 21h",
+    "placeLink": "https://www.sampaingressos.com.br/local/Comedy%20Sampa%20Club__2555",
+    "price": "R$ 31,90",
+    "duration": "80 minutos.",
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Domingos de Morais, 348 - Vila Mariana",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_126384.jpg?12511",
+    "placeTitle": "Comedy Sampa Club",
+    "placeSeats": 0,
+    "comedianName": "Confraria Comedy",
+    "seasonDate": null
+  },
+  {
+    "title": "Iguinho Show em Guarulhos",
+    "season": "Dia 13 de Dezembro (quarta)",
+    "schedule": "Quarta, às 21h.",
+    "placeLink": "https://www.sampaingressos.com.br/local/Um%20Show%20Comedy%20Guarulhos__2927",
+    "price": "A partir de R$ 90,00",
+    "duration": "70 minutos",
+    "classification": {
+      "label": "18 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/18anos.svg"
+    },
+    "address": "Rua Anice 242, Guarulhos - Santa Mena",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_129727.jpg?12511",
+    "placeTitle": "Um Show Comedy Guarulhos",
+    "placeSeats": 0,
+    "comedianName": null,
+    "seasonDate": {
+      "data": "2023-12-13T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Bruna Louise",
+    "season": "até 22 de Dezembro",
+    "schedule": "Sextas, às 22h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20Opus%20Frei%20Caneca__60",
+    "price": "R$ 59,00",
+    "duration": "70 minutos.",
+    "classification": {
+      "label": "16 anos*",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Frei Caneca, 569 - Shopping Frei Caneca, 7° andar - Bela Vista",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_117711.jpg?12511",
+    "placeTitle": "Teatro Opus Frei Caneca",
+    "placeSeats": 0,
+    "comedianName": "Bruna Louise",
+    "seasonDate": {
+      "fim": "2023-12-22T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Comédia ao Vivo",
+    "season": "até 27 de Janeiro",
+    "schedule": "Sextas e Sábados, às 23h59 (exceto 22, 23, 29 e 30/12;); Em Janeiro, a partir de 12/01",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20Renaissance__47",
+    "price": "R$ 49,00",
+    "duration": "80 minutos.",
+    "classification": {
+      "label": "16 anos*",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Alameda Santos, 2233 - Cerqueira César",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_82977.jpg?12511",
+    "placeTitle": "Teatro Renaissance",
+    "placeSeats": 440,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2023-01-27T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Rogerio Morgado Em Guarulhos",
+    "season": "Dia 14 de Dezembro (quinta)",
+    "schedule": "Quinta, às 21h.",
+    "placeLink": "https://www.sampaingressos.com.br/local/Um%20Show%20Comedy%20Guarulhos__2927",
+    "price": "A partir de R$ 45,00",
+    "duration": "70 minutos",
+    "classification": {
+      "label": "18 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/18anos.svg"
+    },
+    "address": "Rua Anice 242, Guarulhos - Santa Mena",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_129728.jpg?12511",
+    "placeTitle": "Um Show Comedy Guarulhos",
+    "placeSeats": 0,
+    "comedianName": null,
+    "seasonDate": {
+      "data": "2023-12-14T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Maurício Meirelles em WebBullying - Geração Z - Especial 10 anos",
+    "season": "até 16 de Dezembro",
+    "schedule": "Sábados, às 23h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20das%20Artes__63",
+    "price": "A partir de R$ 70,00",
+    "duration": null,
+    "classification": {
+      "label": "14 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/14anos.svg"
+    },
+    "address": "Avenida Rebouças, 3970 (Shopping Eldorado) - Pinheiros",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_126070.jpg?12511",
+    "placeTitle": "Teatro das Artes",
+    "placeSeats": 769,
+    "comedianName": "Maurício Meirelles em WebBullying",
+    "seasonDate": {
+      "fim": "2023-12-16T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Errando na Mosca",
+    "season": "até 23 de Dezembro",
+    "schedule": "Sábados, às 22h",
+    "placeLink": "https://www.sampaingressos.com.br/local/Clube%20Barbixas%20de%20Com%C3%A9dia__2925",
+    "price": "R$ 28,00",
+    "duration": "70 minutos",
+    "classification": {
+      "label": "18 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/18anos.svg"
+    },
+    "address": "R. Augusta, 1129 - Consolação",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_122982.jpg?12511",
+    "placeTitle": "Clube Barbixas de Comédia",
+    "placeSeats": 280,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2023-12-23T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Quarta do Standup",
+    "season": "até 27 de Dezembro",
+    "schedule": "Quartas, às 21h (no dia 27/12 será às 20h)",
+    "placeLink": "https://www.sampaingressos.com.br/local/Bixiga%20Comedy%20Club__2842",
+    "price": "R$ 9,90",
+    "duration": "80 minutos",
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Rui Barbosa, 574 - Bela Vista",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_128381.jpg?12511",
+    "placeTitle": "Bixiga Comedy Club",
+    "placeSeats": 0,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2023-12-27T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Diogo Portugal Stand-up Comedy",
+    "season": "até 16 de Dezembro",
+    "schedule": "sábados, às 21h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Comedy%20Sampa%20Club__2555",
+    "price": "R$ 31,90",
+    "duration": "80 minutos.",
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Domingos de Morais, 348 - Vila Mariana",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_115070.jpg?12511",
+    "placeTitle": "Comedy Sampa Club",
+    "placeSeats": 0,
+    "comedianName": "Diogo Portugal",
+    "seasonDate": {
+      "fim": "2023-12-16T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Bixiga Comedy apresenta: 33 Risos Festival",
+    "season": "até 30 de Dezembro",
+    "schedule": "Sábados, às 23h",
+    "placeLink": "https://www.sampaingressos.com.br/local/Bixiga%20Comedy%20Club__2842",
+    "price": "R$ 20,00",
+    "duration": null,
+    "classification": {
+      "label": "14 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/14anos.svg"
+    },
+    "address": "Rua Rui Barbosa, 574 - Bela Vista",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_118036.jpg?12511",
+    "placeTitle": "Bixiga Comedy Club",
+    "placeSeats": 0,
+    "comedianName": "Bixiga Comedy apresenta",
+    "seasonDate": {
+      "fim": "2023-12-30T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Nil Agra - Sem Controle - Comedy Sampa",
+    "season": "Dia 17 de Dezembro (domingo)",
+    "schedule": "domingo, às 19h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Comedy%20Sampa%20Club__2555",
+    "price": "R$ 31,90",
+    "duration": "110 minutos",
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Domingos de Morais, 348 - Vila Mariana",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_128195.jpg?12511",
+    "placeTitle": "Comedy Sampa Club",
+    "placeSeats": 0,
+    "comedianName": "Nil Agra",
+    "seasonDate": {
+      "data": "2023-12-17T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Série B - Dihh Lopes e Márcio Donato",
+    "season": "Dia 21 de Dezembro (quinta)",
+    "schedule": "Quinta, às 20h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20Santo%20Agostinho__59",
+    "price": "R$ 24,90",
+    "duration": null,
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "Rua Apeninos, 118 (próx. estação Vergueiro do Metrô) - Liberdade",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_127962.jpg?12511",
+    "placeTitle": "Teatro Santo Agostinho",
+    "placeSeats": 680,
+    "comedianName": "Série B",
+    "seasonDate": {
+      "data": "2023-12-21T03:00:00.000Z"
+    }
+  }
+]
