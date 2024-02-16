@@ -1,2 +1,9 @@
-# stand-app-scrapping
-# stand-app-scrapping
+
+Bilheteria express 
+node bilheteriaexpress.js         
+
+Sampa ingressos
+node sampaingressos.js
+
+Run tests 
+npm jest
