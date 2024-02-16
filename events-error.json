@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Em Pé na Rede",
+    "season": "até 27 de Fevereiro",
+    "schedule": "terças, às 20h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/Clube%20Barbixas%20de%20Com%C3%A9dia__2925",
+    "price": "R$ 20,00",
+    "duration": "90 minutos",
+    "classification": {
+      "label": "14 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/14anos.svg"
+    },
+    "address": "R. Augusta, 1129 - Consolação",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_124785.jpg?12511",
+    "placeTitle": "Clube Barbixas de Comédia",
+    "placeSeats": 280,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2024-02-27T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Da Puberdade à Menopausa",
+    "season": "Estreia dia 10 de Fevereiro (sábado). até 2 de Março",
+    "schedule": "Sábados, às 17h30.",
+    "placeLink": "https://www.sampaingressos.com.br/local/Teatro%20das%20Artes__63",
+    "price": "A partir de R$ 40,00",
+    "duration": "75 minutos.",
+    "classification": {
+      "label": "14 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/14anos.svg"
+    },
+    "address": "Avenida Rebouças, 3970 (Shopping Eldorado) - Pinheiros",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_130418.jpg?12511",
+    "placeTitle": "Teatro das Artes",
+    "placeSeats": 769,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2024-03-02T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "House Of Legends Comedy",
+    "season": "até 18 de Dezembro",
+    "schedule": "quartas, às 20h30",
+    "placeLink": "https://www.sampaingressos.com.br/local/House%20of%20Legends%20Comedy__1000113",
+    "price": "R$ 15,00",
+    "duration": null,
+    "classification": {
+      "label": "16 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/16anos.svg"
+    },
+    "address": "R. Inácio Pereira da Rocha, 367 - Vila Madalena",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_122744.jpg?12511",
+    "placeTitle": "House of Legends Comedy",
+    "placeSeats": 0,
+    "comedianName": null,
+    "seasonDate": {
+      "fim": "2024-12-18T03:00:00.000Z"
+    }
+  },
+  {
+    "title": "Rodrigo Cáceres",
+    "season": "Dia 10 de Fevereiro (sábado)",
+    "schedule": "Sábado, às 21h.",
+    "placeLink": "https://www.sampaingressos.com.br/local/Hillarius%20Comedy%20Bar%20SP__2740",
+    "price": "R$ 35,00",
+    "duration": null,
+    "classification": {
+      "label": "18 anos",
+      "image": "https://www.sampaingressos.com.br/templates/images/18anos.svg"
+    },
+    "address": "Av. Salim Farah Maluf, 1850 - Tatuapé",
+    "image": "https://sampaingressos.com.br/fotosEspetaculos/foto_130987.jpg?12511",
+    "placeTitle": "Hillarius Comedy Bar SP",
+    "placeSeats": 0,
+    "comedianName": null,
+    "seasonDate": {
+      "data": "2024-02-10T03:00:00.000Z"
+    }
+  }
+]

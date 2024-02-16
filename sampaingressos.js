@@ -3,7 +3,6 @@ const fs = require('fs');
 const csv = require("simple-json-to-csv");
 const axios = require('axios');
 
-
 const url = 'https://www.sampaingressos.com.br/espetaculos/standUp?pagina=';
 
 let currentPage = 1;
@@ -13,10 +12,13 @@ let counter = 1;
 let existElementsToConsume = true;
 
 const comedians = [
-	"Fábio Rabin",
-	"Bruna Louise",
-	"Oscar Filho"
+
 ];
+
+const places = [
+
+];
+
 
 const meses = {
   janeiro: 0,
@@ -78,6 +80,8 @@ async function scrappingSampaIngressos() {
 
 async function getEvents(page) 
 {
+
+	await getAllComedians();
 
 	await page
 	.waitForSelector('.col-card a')
@@ -162,7 +166,6 @@ async function getEvents(page)
 				const placeSeats = match ? parseInt(match[1]) : 0;
 				const placeTitle = place.replace(regex, '').trim();
 
-				console.log('place title: ', place, placeSeats);
 				return {
 					placeTitle,
 					placeSeats
@@ -177,19 +180,58 @@ async function getEvents(page)
 
 		const season = getSeasonTime(eventObj.season);
 
-		console.log(`Data: ${season}`)
 		eventObj.comedianName = comedianName;
 		eventObj.seasonDate = season;
 
-		console.log(`Comedian Name: ${comedianName} `  )
+		console.log(`Comedian Name: ${comedianName} `)
 		console.log(`Event ${counter}: ${eventObj.title} - ${eventObj.price}`);
+		console.log(`Address: ${eventObj.address}`);
 		events.push(eventObj);
-		insertOnFile();
-		// insertOnDatabase();
 
+		if (comedianName) {
+			const data = {
+				name: comedianName,
+				miniBio: 'Comedian bio',
+				thumbnail: eventObj.image,	
+				attractions: []
+			};
+			const location = getZipcodeFromAddress(eventObj.address);
+			const placeImage = getPlaceImage(eventObj.placeTitle);
+
+			console.log('zipcode:', 
+			  location.zipcode,
+				location.lat, 
+				location.lon,
+				placeImage
+			)
+
+			const placeData = {
+				name: eventObj.placeTitle,
+				seats: eventObj.placeSeats,
+				address: eventObj.address,
+				zipcode: location.zipcode,
+				image: placeImage && '',
+				lat: location.lat,
+				lng: location.lon
+			};
+
+			insertOnFile('events.json')
+
+			if (!comedians.find(comedianName)) {
+				insertComedianOnApi(data)
+			}
+			
+			if (!places.find(eventObj.placeTitle)) {
+				insertPlaceOnApi(placeData)
+			}
+
+
+		} else {
+			const filename = 'events-error.json';
+			insertOnFile(filename);
+		}
 		// insertInCsv();
 		counter++;
-
 	}
 
 }
@@ -296,17 +338,16 @@ async function insertInCsv(){
 	file.convert("out/result.csv").then("Saved")
 }
 
-async function insertOnFile() {
+async function insertOnFile(fileName) {
 
 	try {
-		const filename = 'events.json';
 
 		const jsonString = JSON.stringify(events, null, 2);
-		fs.writeFile(filename, jsonString, error => {
+		fs.writeFile(fileName, jsonString, error => {
 			if (error) {
 				throw new Error('Something is wrong')
 			}
-			console.log('Inserted')
+			console.log('Inserted on file: ', fileName)
 		});
 	} catch (err) {
 
@@ -314,32 +355,125 @@ async function insertOnFile() {
 
 }
 
-async function insertComedianOnApi()
+const baseUrl = 'http://localhost:8888/api/v1';
+
+async function insertComedianOnApi(data)
 {
+	console.log('Inserting comedian');
 
-	const apiUrl = 'https://localhost:8088/api/v1/comedians';
-
-	const comedianData = {
-		title: 'Exemplo de Post',
-		body: 'Conteúdo do post',
-		userId: 1,
-	};
-
-
-	axios.post(apiUrl, comedianData)
+	axios.post(baseUrl + '/comedians', data)
 		.then(response => {
-
-
-
-			console.log('Resposta da API:', response.data);
-
+			comedians.push(response.data.data.name);
+			console.log('Comedian registered:', response.data.status, response.data.data.name );
 		})
 		.catch(error => {
 			console.error('Erro ao fazer a requisição POST:', error.message);
 		});
 }
 
+async function insertPlaceOnApi(data)
+{
+	console.log('Inserting place');
 
+	axios.post(baseUrl + '/places', data)
+		.then(response => {
+			comedians.push(response.data.data.name);
+			console.log('Place registered:', response.data.status, response.data.data.name);
+		})
+		.catch(error => {
+			console.error('Erro ao fazer a requisição POST:', error.message);
+		});
+}
 
-// scrappingSampaIngressos();
+async function getAllComedians()
+{
+	axios.get(baseUrl + '/comedians')
+	.then(response => {
 
+		const comediansData = response.data.data;
+
+		for(comedian of comediansData) {
+			comedians.push(comedian.name)
+		}
+
+	})
+	.catch(error => {
+		console.error('Erro ao fazer a requisição:', error.message);
+	});
+}
+
+async function getZipcodeFromAddress(address) {
+
+	console.log('getting zipcode');
+
+	var apiUrl = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
+
+		await axios.get(apiUrl).then(response => {
+
+			const data = response.data;
+
+			if (data.length > 0) {
+				if (data[0].address?.postcode) {
+					var zipcode = data[0].address.postcode;
+				} else {
+					var zipcode = getZipcodeFromDisplayName(data[0].display_name)
+				}
+
+				const lat = data[0].lat;
+				const lon = data[0].lon;
+
+				console.log('zipcode: ' + zipcode);
+
+				return {
+					zipcode,
+					lat,
+					lon
+				}
+
+			}
+	})
+	.catch(error => {
+		console.error('Erro ao fazer a requisição:', error.message);
+	});
+}
+
+function getZipcodeFromDisplayName(str) {
+  var regexCep = /\b\d{5}-?\d{3}\b/;
+  var match = str.match(regexCep);
+	
+  return match ? match[0] : null;
+}
+
+function getPlaceImage(term) {
+  var apiKey = 'AIzaSyAh7Vpx8BY4Blf-LpWA3MvOs-pB1B4NJ7Q';
+  var apiUrl = `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${encodeURIComponent(term)}&inputtype=textquery&fields=photos,formatted_address,name&key=${apiKey}`;
+
+  axios.get(apiUrl)
+    .then(response => {
+			var data = response.data;
+
+      if (data.status === 'OK' && data.candidates && data.candidates.length > 0) {
+        var lugar = data.candidates[0];
+
+        if (lugar.photos && lugar.photos.length > 0) {
+          var referenceIMG = lugar.photos[0].photo_reference;
+          return getImage(referenceIMG);
+        } else {
+          console.log('Nenhuma imagem encontrada para o lugar.');
+        }
+      } else {
+        console.log('Local não encontrado.');
+      }
+    })
+    .catch(error => {
+      console.error('Erro na busca do lugar:', error);
+    });
+}
+
+function getImage(referenciaFoto) {
+  var apiKey = 'AIzaSyAh7Vpx8BY4Blf-LpWA3MvOs-pB1B4NJ7Q';
+  var apiUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${referenciaFoto}&key=${apiKey}`;
+	return apiUrl
+}
+
+scrappingSampaIngressos();
